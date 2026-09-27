@@ -101,6 +101,11 @@ ul.plain > li:last-child{border-bottom:none;}
 .pub .authors{font-size:15px;}
 .pub .authors b{font-weight:700;}
 .pub .tags{margin-top:6px; display:flex; gap:8px; font-size:13px;}
+.pub .status{
+  display:inline-block; margin-top:6px; font-size:12px; font-weight:600;
+  letter-spacing:.02em; color:var(--muted);
+  border:1px solid var(--line); border-radius:999px; padding:2px 10px;
+}
 
 .year{
   display:inline-block; font-size:13px; color:var(--muted);
@@ -226,18 +231,22 @@ footer{
   <!-- ================= 논문 ================= -->
   <section id="publications">
     <h2>Publications</h2>
-
-    <!-- 논문이 생기면 아래 형식으로 최신순 추가. 본인 이름은 <b>로 감싸기
     <ul class="plain pub">
-      <li>
-        <div><strong>Paper Title</strong></div>
-        <div class="authors"><b>Sungjae Yu</b>, Co-author Name</div>
-        <div class="venue">Venue, Year</div>
-        <div class="tags"><a href="#">PDF</a> <a href="#">DOI</a></div>
-      </li>
-    </ul>
-    -->
 
+      <li>
+        <div><strong>텍스트와 이미지의 계층적 특성 융합을 활용한 멀티모달 리뷰 유용성 예측</strong></div>
+        <div class="authors"><b>유성재</b>, 신유림, 허윤, 신정호, 이청용, 이석기</div>
+        <div class="venue">한국IT서비스학회지</div>
+        <span class="status">Under Review</span>
+      </li>
+
+      <!-- 논문이 추가되면 위 형식으로 최신순 삽입.
+           게재 확정 시 <span class="status"> 줄을 아래처럼 교체:
+           <div class="venue">저널명, 2026</div>
+           <div class="tags"><a href="#">PDF</a> <a href="#">DOI</a></div>
+      -->
+
+    </ul>
   </section>
 
 
