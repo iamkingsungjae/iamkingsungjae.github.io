@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,6 +55,7 @@ nav .inner{
 }
 nav a{color:var(--muted);}
 nav a:hover{color:var(--fg); text-decoration:none;}
+nav .lang{margin-left:auto;}
 
 /* ---------- 레이아웃 ---------- */
 main{max-width:820px; margin:0 auto; padding:0 20px 80px;}
@@ -146,6 +147,7 @@ footer{
     <a href="#publications">Publications</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
+    <a href="ko.html" class="lang" lang="ko">한국어</a>
   </div>
 </nav>
 
@@ -257,29 +259,30 @@ footer{
     <div class="entry">
       <div class="year">2026.03 – 2026.08</div>
       <div class="body">
-        <div><strong>SafeTalk</strong> — 실시간 보이스피싱 탐지 서비스</div>
-        <div class="sub">한이음 ICT 멘토링 · AI (Voice Pipeline)</div>
+        <div><strong>SafeTalk</strong> — Real-Time Voice Phishing Detection</div>
+        <div class="sub">Hanium ICT Mentoring Program · AI (Voice Pipeline)</div>
         <div>
-          통화 음성을 실시간으로 수신·전처리해 AASIST로 합성 음성을 탐지하고, STT 전사문을
-          규칙·RAG·LLM 분석 서버로 넘겨 0–100 위험 지수를 산출하는 음성 파이프라인 구현.
+          Built the voice pipeline for live phone calls: audio ingestion and preprocessing,
+          synthetic-voice detection with AASIST, and speech-to-text. Transcripts are analyzed by a
+          rule-, RAG-, and LLM-based server, and a risk engine combines both signals into a 0–100 risk score.
         </div>
-        <div class="sub">Python · AASIST · STT · RAG · FastAPI · Spring Boot · Twilio</div>
+        <div class="sub">Python · AASIST · STT · RAG · FastAPI · Twilio</div>
       </div>
     </div>
 
     <div class="entry">
       <div class="year">2026.03 – 2026.06</div>
       <div class="body">
-        <div><strong>Findish</strong> — 개인화·그룹화 AI 다이닝 플랫폼</div>
-        <div class="sub">Hansung University Capstone Design · Data</div>
+        <div><strong>Findish</strong> — AI Dining Platform for Personal and Group Recommendation</div>
+        <div class="sub">Capstone Design, Hansung University · Data</div>
         <div>
-          리뷰를 83,310개 문장으로 분해해 6대 관점·감정을 태깅하고, 텍스트/멀티모달 임베딩과
-          SigLIP2 기반 관점별 대표 이미지 매칭으로 추천 엔진의 데이터 기반을 구축.
+          Built the data foundation of the recommendation engine. Split restaurant reviews into
+          83,310 sentences, tagged each with one of six aspects (taste, atmosphere, service, price,
+          facilities, waiting) and its sentiment, and built text and multimodal embeddings,
+          using SigLIP2 to match each aspect with a representative review photo.
         </div>
-        <div class="sub">SigLIP2 · pgvector · LangGraph · MCP · FastAPI · Spring Boot · React</div>
-        <div class="pub"><div class="tags">
-          <span class="status" style="margin-top:0">🥇 Best Project Award, 2026 Capstone Design Exhibition</span>
-        </div></div>
+        <div class="sub">Python · SigLIP2 · pgvector · LangGraph · FastAPI · React</div>
+        <span class="status">🥇 Best Project Award, 2026 Hansung University Capstone Design Exhibition</span>
         <div class="pub"><div class="tags">
           <a href="https://github.com/SinseonSeolnongtang" target="_blank" rel="noopener">GitHub</a>
         </div></div>
@@ -289,11 +292,12 @@ footer{
     <div class="entry">
       <div class="year">2025.09 – 2025.12</div>
       <div class="body">
-        <div><strong>Panel Insight</strong> — 패널 데이터 검색·클러스터링 분석 플랫폼</div>
-        <div class="sub">기업연계 SW 캡스톤디자인 · Team Lead / AI / Data</div>
+        <div><strong>Panel Insight</strong> — Survey Panel Search and Clustering Platform</div>
+        <div class="sub">Industry-Academia SW Capstone Design · Team Lead / AI / Data</div>
         <div>
-          자연어 질의로 설문 패널을 벡터 검색하고, HDBSCAN·UMAP으로 패널을 군집화·시각화해
-          클러스터 간 비교 인사이트를 제공하는 웹 서비스.
+          Led a four-person team building a web service that retrieves survey panels from
+          natural-language queries via vector search, clusters them with HDBSCAN, visualizes
+          the clusters with UMAP, and compares them side by side.
         </div>
         <div class="sub">FastAPI · PostgreSQL/pgvector · Pinecone · HDBSCAN · UMAP · LLM API · React · TypeScript</div>
         <div class="pub"><div class="tags">
